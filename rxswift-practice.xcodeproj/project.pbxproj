@@ -15,6 +15,7 @@
 		6EB7A70F1F60EC5B00233213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB7A70D1F60EC5B00233213 /* LaunchScreen.storyboard */; };
 		6EB7A71A1F60EC5B00233213 /* rxswift_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB7A7191F60EC5B00233213 /* rxswift_practiceTests.swift */; };
 		6EB7A7251F60EC5B00233213 /* rxswift_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB7A7241F60EC5B00233213 /* rxswift_practiceUITests.swift */; };
+		6EDC7B6A1F62427600C73EB5 /* Hoge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDC7B691F62427600C73EB5 /* Hoge.swift */; };
 		D72C820AF89B04A9A47A2980 /* Pods_rxswift_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9CEA0181FEB6E706C76A4B2 /* Pods_rxswift_practice.framework */; };
 		E49FFEF7D5B6962C7EF8DAA1 /* Pods_rxswift_practiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8708E62424FC0A5D42E75718 /* Pods_rxswift_practiceUITests.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		6EB7A7201F60EC5B00233213 /* rxswift-practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rxswift-practiceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB7A7241F60EC5B00233213 /* rxswift_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rxswift_practiceUITests.swift; sourceTree = "<group>"; };
 		6EB7A7261F60EC5B00233213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EDC7B691F62427600C73EB5 /* Hoge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hoge.swift; sourceTree = "<group>"; };
 		7B797394F5CDBCE1E563E7B1 /* Pods-rxswift-practiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxswift-practiceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rxswift-practiceTests/Pods-rxswift-practiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8708E62424FC0A5D42E75718 /* Pods_rxswift_practiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rxswift_practiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9A9B4BF03029B9EBD4735A /* Pods-rxswift-practiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxswift-practiceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-rxswift-practiceUITests/Pods-rxswift-practiceUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				6EB7A70B1F60EC5B00233213 /* Assets.xcassets */,
 				6EB7A70D1F60EC5B00233213 /* LaunchScreen.storyboard */,
 				6EB7A7101F60EC5B00233213 /* Info.plist */,
+				6EDC7B691F62427600C73EB5 /* Hoge.swift */,
 			);
 			path = "rxswift-practice";
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EB7A7071F60EC5B00233213 /* ViewController.swift in Sources */,
+				6EDC7B6A1F62427600C73EB5 /* Hoge.swift in Sources */,
 				6EB7A7051F60EC5B00233213 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,6 +713,7 @@
 				6EB7A72B1F60EC5B00233213 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EB7A72C1F60EC5B00233213 /* Build configuration list for PBXNativeTarget "rxswift-practiceTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +722,7 @@
 				6EB7A72E1F60EC5B00233213 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EB7A72F1F60EC5B00233213 /* Build configuration list for PBXNativeTarget "rxswift-practiceUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +731,7 @@
 				6EB7A7311F60EC5B00233213 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
