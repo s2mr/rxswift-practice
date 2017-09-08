@@ -16,15 +16,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var field1: UITextField!
     
+    @IBOutlet weak var button: UIButton!
     let disposeBag = DisposeBag()
     
     let hoge = Hoge()
+    let presenter = Presenter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         fieldBindToLabel()
         subscribeHoge()
+        subscribePresenter()
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +60,12 @@ class ViewController: UIViewController {
         })
     }
     
+    func subscribePresenter() {
+        let disposable = presenter.buttonHidden.subscribe(onNext: { [button] in
+            button?.isHidden = $0
+        })
+    }
+    
     @IBAction func onNextButtonTapped(_ sender: Any) {
         hoge.doSomething()
     }
@@ -67,6 +76,14 @@ class ViewController: UIViewController {
     
     @IBAction func onCompleteButtonTapped(_ sender: Any) {
         hoge.completed()
+    }
+    
+    @IBAction func startButtonTapped(_ sender: Any) {
+        presenter.start()
+    }
+    
+    @IBAction func stopButtonTapped(_ sender: Any) {
+        presenter.stop()
     }
     
     
